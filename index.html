@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  
+  <title>Piedra, papel, tijera, lagartija, Spock</title> 
+
+</head>
+<body>
+
+  <!-- PUNTAJE -->
+  <div class="title-score-container">
+    <p class="title">
+      PIEDRA <br>
+      PAPEL  <br>
+      TIJERA <br>
+      LAGARTIJA <br>
+      SPOCK
+    </p>
+    <div class="score-container">
+      
+        <div>
+          <p class="score-owner">VOS</p>
+          <p class="score user-score">0</p>
+        </div>
+        <div class="space"></div>
+        <div>
+          <p class="score-owner">YO</p>
+          <p class="score computer-score">0</p>
+        </div>
+      
+    </div>
+  </div>
+
+  <!-- OPCIONES -->
+  <div class="options-container disappear">
+    <img src="images/bg-pentagon.svg" alt="">
+
+    <div class="paper-container outer option" id="paper">
+      <div class="inner option" id="paper">
+        <img src="images/icon-paper.svg" alt="" id="paper" class="option">
+      </div>
+    </div>
+
+    <div class="rock-container outer option" id="rock">
+      <div class="inner option" id="rock">
+        <img src="images/icon-rock.svg" alt="" id="rock" class="option">
+      </div>
+    </div>
+
+    <div class="scissors-container outer option" id="scissors">
+      <div class="inner option" id="scissors">
+        <img src="images/icon-scissors.svg" alt="" id="scissors" class="option">
+      </div>
+    </div>
+
+    <div class="lizard-container outer option" id="lizard">
+      <div class="inner option" id="lizard">
+        <img src="images/icon-lizard.svg" alt="" id="lizard" class="option">
+      </div>
+    </div>
+
+    <div class="spock-container outer option" id="spock">
+      <div class="inner option" id="spock">
+        <img src="images/icon-spock.svg" alt="" id="spock" class="option">
+      </div>
+    </div>
+
+  </div>
+  
+  <!-- RESULTADO VISUAL --> 
+  <div class="first-step">
+    <div class="user-choice-container">
+      <p class="result-text">VOS ELEGISTE</p>
+
+      <div class="outer user-choice outer-mobile">
+        <div class="inner user-choice-inner">
+          <img src="images/icon-paper.svg" alt="">
+        </div>
+      </div>
+
+      <div class="winner-effect-container user-winner">
+        <div class="winner-effect layer1"></div>
+        <div class="winner-effect layer2"></div>
+        <div class="winner-effect layer3"></div>
+      </div>
+
+    </div>
+
+
+    <div class="actual-result">
+      <p class="text-result"></p>
+      <button class="play-again-btn">JUGAR OTRA VEZ</button>
+    </div>
+
+
+
+    <div class="computer-choice-container">
+      <p class="result-text">YO ELEGÍ</p>
+
+      <div class="outer computer-choice outer-mobile">
+        <div class="inner computer-choice-inner">
+        </div>
+      </div>
+
+      <div class="winner-effect-container computer-winner">
+        <div class="winner-effect layer1"></div>
+        <div class="winner-effect layer2"></div>
+        <div class="winner-effect layer3"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- REGLAS -->
+  <button class="rules-btn">REGLAS</button>
+
+  <div class="rules-container">
+    <div>
+      <p>REGLAS</p>
+      <img src="images/icon-close.svg" alt="" class="close-icon">
+    </div>
+
+    <img src="images/image-rules-bonus.svg" alt="">
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Florencia Holzmann</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+</body>
+</html>
